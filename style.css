@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+
+}
+
+/* If screen size is more than 600px wide */
+@media screen and (min-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .show {
+        display: block;
+    }
+}
+
+/* If screen size is 600px wide, or less  */
+@media screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .show {
+        display: none;
+    }
+}
+
+main {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    /* width: 50%; */
+    /* justify-content: center;
+    align-items: center; */
+    padding: 40px;
+    /* flex-direction: row; */
+
+}
+
+.container {
+    height: 500px;
+    min-width: 250px;
+
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+h1 {
+    padding: 30px 50px 20px 0px;
+    color: hsl(0, 0%, 95%)
+}
+
+p {
+    padding-bottom: 2em;
+    font-size: 10px;
+    color: rgb(197, 202, 207);
+
+
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+button {
+    color: rgb(204, 196, 196);
+    cursor: pointer;
+    display: inline-block;
+    width: 70%;
+    background-color: transparent;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition-duration: 0.4s;
+}
+
+
+button:hover {
+    background-color: #adc0ad;
+    color: white;
+}
